@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2025-02-01 23:25:29.037207",
+ "description": "SEAL Theme Settings",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "sb0",
+  "color_scheme",
+  "apply_to_website",
+  "cb0",
+  "sb1",
+  "login_background_img",
+  "login_background_img_opacity",
+  "cb1",
+  "preview_login_background_img",
+  "login_context_image_section",
+  "login_context_img",
+  "login_context_img_opacity",
+  "cb2",
+  "preview_login_context_img"
+ ],
+ "fields": [
+  {
+   "default": "Blue",
+   "fieldname": "color_scheme",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Color Scheme",
+   "options": "Blue\nGreen\nRed\nOrange\nAmber\nYellow\nCyan\nTeal\nViolet\nPink\nPurple",
+   "reqd": 1
+  },
+  {
+   "fieldname": "login_background_img",
+   "fieldtype": "Attach",
+   "label": "Login Background Image"
+  },
+  {
+   "fieldname": "login_context_img",
+   "fieldtype": "Attach",
+   "label": "Login Context Image"
+  },
+  {
+   "fieldname": "preview_login_background_img",
+   "fieldtype": "Image",
+   "options": "login_background_img"
+  },
+  {
+   "fieldname": "preview_login_context_img",
+   "fieldtype": "Image",
+   "options": "login_context_img"
+  },
+  {
+   "default": "100",
+   "depends_on": "eval:doc.login_background_img",
+   "fieldname": "login_background_img_opacity",
+   "fieldtype": "Percent",
+   "label": "Login Background Image Opacity",
+   "mandatory_depends_on": "eval:doc.login_background_img",
+   "precision": "0"
+  },
+  {
+   "default": "100",
+   "depends_on": "eval:doc.login_context_img",
+   "fieldname": "login_context_img_opacity",
+   "fieldtype": "Percent",
+   "label": "Login Context Image Opacity",
+   "mandatory_depends_on": "eval:doc.login_context_img",
+   "precision": "0"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_to_website",
+   "fieldtype": "Check",
+   "label": "Apply to Website"
+  },
+  {
+   "fieldname": "sb0",
+   "fieldtype": "Section Break",
+   "label": "Applications and Website"
+  },
+  {
+   "fieldname": "cb0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break",
+   "label": "Login Background Image"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "login_context_image_section",
+   "fieldtype": "Section Break",
+   "label": "Login Context Image"
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-12-11 13:11:40.723780",
+ "modified_by": "Administrator",
+ "module": "SEAL Theme",
+ "name": "SEAL Theme Settings",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

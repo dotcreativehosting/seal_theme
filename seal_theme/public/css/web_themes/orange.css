@@ -1,0 +1,317 @@
+/* ============================================
+   ORANGE WEB THEME - CSS VARIABLES ONLY
+   ============================================
+   
+   This file contains ONLY color-specific CSS variables.
+   All component styles are in seal_theme.css
+*/
+
+:root {
+	/* ----------------
+	   PRIMARY COLORS
+	   ---------------- */
+	--primary: var(--orange-700);
+	--brand-color: var(--primary);
+	--primary-color: var(--orange-800);
+	--primary-dark: var(--orange-900);
+	--border-primary: var(--orange-800);
+--bg-light-primary: var(--orange-50);
+--bg-primary: var(--orange-100);
+	
+	/* ----------------
+	   SPACING
+	   ---------------- */
+	/* Padding */
+	--padding-xs: 5px;
+	--padding-sm: 6px;
+	--padding-md: 15px;
+	--padding-lg: 20px;
+	--padding-xl: 30px;
+	--padding-2xl: 40px;
+	
+	/* Margin */
+	--margin-xs: 5px;
+	--margin-sm: 10px;
+	--margin-md: 15px;
+	--margin-lg: 20px;
+	--margin-xl: 30px;
+	--margin-2xl: 40px;
+	
+	/* ----------------
+	   SHADOWS
+	   ---------------- */
+	--modal-shadow: var(--shadow-md);
+	--card-shadow: var(--shadow-sm);
+	--btn-shadow: var(--shadow-xs);
+	--highlight-shadow: 1px 1px 10px var(--orange-50), 0px 0px 4px var(--orange-600);
+	--shadow-inset: inset 0px -1px 0px var(--orange-300);
+	
+	/* ----------------
+	   LAYOUT
+	   ---------------- */
+	--navbar-height: 48px;
+	
+	/* ----------------
+	   ICONS
+	   ---------------- */
+	--icon-fill: transparent;
+	--icon-fill-bg: var(--fg-color);
+	--icon-stroke: var(--orange-800);
+	
+	/* ----------------
+	   BACKGROUND COLORS
+	   ---------------- */
+	/* Base backgrounds */
+	--bg-color: white;
+	--fg-color: white;
+	--card-bg: var(--fg-color);
+	--modal-bg: white;
+	--toast-bg: var(--modal-bg);
+	--popover-bg: white;
+	--navbar-bg: white;
+	
+	/* Colored backgrounds - all available colors for flexibility */
+	--bg-blue: var(--blue-100);
+	--bg-light-blue: var(--blue-50);
+	--bg-dark-blue: var(--blue-300);
+	--bg-green: var(--green-100);
+	--bg-light-green: var(--green-50);
+	--bg-dark-green: var(--green-300);
+	--bg-yellow: var(--yellow-100);
+	--bg-light-yellow: var(--yellow-50);
+	--bg-dark-yellow: var(--yellow-300);
+	--bg-amber: var(--amber-100);
+	--bg-light-amber: var(--amber-50);
+	--bg-dark-amber: var(--amber-300);
+	--bg-orange: var(--orange-100);
+	--bg-light-orange: var(--orange-50);
+	--bg-dark-orange: var(--orange-300);
+	--bg-red: var(--red-100);
+	--bg-light-red: var(--red-50);
+	--bg-dark-red: var(--red-300);
+	--bg-pink: var(--pink-100);
+	--bg-light-pink: var(--pink-50);
+	--bg-dark-pink: var(--pink-300);
+	--bg-purple: var(--purple-100);
+	--bg-light-purple: var(--purple-50);
+	--bg-dark-purple: var(--purple-300);
+	--bg-violet: var(--violet-100);
+	--bg-light-violet: var(--violet-50);
+	--bg-dark-violet: var(--violet-300);
+	--bg-cyan: var(--cyan-100);
+	--bg-light-cyan: var(--cyan-50);
+	--bg-dark-cyan: var(--cyan-300);
+	--bg-teal: var(--teal-100);
+	--bg-light-teal: var(--teal-50);
+	--bg-dark-teal: var(--teal-300);
+	--bg-gray: var(--gray-100);
+	--bg-grey: var(--gray-100);
+	--bg-light-gray: var(--gray-50);
+	--bg-dark-gray: var(--gray-300);
+	--bg-darkgrey: var(--gray-300);
+	
+	/* Accent backgrounds - theme color */
+	--subtle-accent: var(--orange-50);
+	--subtle-fg: var(--orange-100);
+	--fg-hover-color: var(--orange-100);
+	--highlight-color: var(--orange-50);
+	--yellow-highlight-color: var(--yellow-50);
+	
+	/* ----------------
+	   TEXT COLORS
+	   ---------------- */
+	/* General text colors */
+	--heading-color: var(--orange-900);
+	--text-neutral: var(--gray-900);
+	--text-color: var(--gray-800);
+	--text-muted: var(--gray-700);
+	--text-light: var(--gray-600);
+	--text-dark: var(--fg-color);
+	--disabled-text-color: var(--orange-600);
+	
+	/* Text on colored backgrounds */
+	--text-on-blue: var(--blue-700);
+	--text-on-light-blue: var(--blue-600);
+	--text-on-dark-blue: var(--blue-800);
+	--text-on-green: var(--green-800);
+	--text-on-light-green: var(--green-600);
+	--text-on-dark-green: var(--green-900);
+	--text-on-yellow: var(--yellow-900);
+	--text-on-light-yellow: var(--yellow-800);
+	--text-on-dark-yellow: var(--yellow-900);
+	--text-on-amber: var(--amber-900);
+	--text-on-light-amber: var(--amber-800);
+	--text-on-dark-amber: var(--amber-900);
+	--text-on-orange: var(--orange-700);
+	--text-on-light-orange: var(--orange-600);
+	--text-on-dark-orange: var(--orange-800);
+	--text-on-red: var(--red-700);
+	--text-on-light-red: var(--red-600);
+	--text-on-dark-red: var(--red-800);
+	--text-on-pink: var(--pink-700);
+	--text-on-light-pink: var(--pink-600);
+	--text-on-dark-pink: var(--pink-800);
+	--text-on-purple: var(--purple-700);
+	--text-on-light-purple: var(--purple-600);
+	--text-on-dark-purple: var(--purple-800);
+	--text-on-violet: var(--violet-700);
+	--text-on-light-violet: var(--violet-600);
+	--text-on-dark-violet: var(--violet-800);
+	--text-on-cyan: var(--cyan-700);
+	--text-on-light-cyan: var(--cyan-600);
+	--text-on-dark-cyan: var(--cyan-800);
+	--text-on-teal: var(--teal-700);
+	--text-on-light-teal: var(--teal-600);
+	--text-on-dark-teal: var(--teal-800);
+	--text-on-gray: var(--gray-700);
+	--text-on-grey: var(--gray-700);
+	--text-on-light-gray: var(--gray-800);
+	--text-on-dark-gray: var(--gray-800);
+	--text-on-darkgrey: var(--gray-800);
+	
+	/* ----------------
+	   ALERT COLORS
+	   ---------------- */
+	/* Alert text colors */
+	--alert-text-danger: var(--red-600);
+	--alert-text-warning: var(--yellow-700);
+	--alert-text-info: var(--blue-700);
+	--alert-text-success: var(--green-700);
+	
+	/* Alert backgrounds */
+	--alert-bg-danger: var(--red-50);
+	--alert-bg-warning: var(--yellow-50);
+	--alert-bg-info: var(--blue-50);
+	--alert-bg-success: var(--green-100);
+	
+	/* ----------------
+	   FORM CONTROLS
+	   ---------------- */
+	--control-bg: var(--orange-100);
+	--control-bg-on-gray: var(--orange-200);
+	--disabled-control-bg: var(--orange-50);
+	--input-disabled-bg: var(--orange-50);
+	--awesomebar-focus-bg: var(--fg-color);
+	--awesomplete-hover-bg: var(--control-bg);
+	--placeholder-color: var(--orange-50);
+	--input-height: 28px;
+	
+	/* ----------------
+	   BUTTONS
+	   ---------------- */
+	--btn-primary: var(--orange-800);
+	--btn-default-bg: var(--orange-100);
+	--btn-default-hover-bg: var(--orange-300);
+	--btn-group-border-color: var(--orange-300);
+	--btn-height: 28px;
+
+	/* Button color variants */
+	--btn-secondary-bg: var(--gray-600);
+	--btn-secondary-bg-dark: var(--gray-700);
+	--btn-success-bg: var(--green-600);
+	--btn-success-bg-dark: var(--green-700);
+	--btn-danger-bg: var(--red-600);
+	--btn-danger-bg-dark: var(--red-700);
+	--btn-warning-bg: var(--yellow-500);
+	--btn-warning-bg-dark: var(--yellow-600);
+	--btn-warning-text: var(--gray-900);
+	
+	/* ----------------
+	   CHECKBOXES & SWITCHES
+	   ---------------- */
+	--checkbox-right-margin: var(--margin-xs);
+	--checkbox-size: 16px;
+	--checkbox-color: var(--orange-400);
+	--checkbox-focus-shadow: 0 0 0 2px var(--orange-300);
+	--checkbox-gradient: linear-gradient(180deg, var(--primary) -124.51%, var(--primary) 100%);
+	--checkbox-disabled-gradient: linear-gradient(
+		180deg, 
+		var(--disabled-control-bg) -124.51%, 
+		var(--disabled-control-bg) 100%
+	);
+	--switch-bg: var(--orange-300);
+	
+	/* ----------------
+	   BORDERS
+	   ---------------- */
+	--border-color: var(--orange-200);
+	--dark-border-color: var(--orange-300);
+	--table-border-color: var(--orange-200);
+	
+	/* ----------------
+	   SIDEBAR & SCROLLBAR
+	   ---------------- */
+	--sidebar-select-color: var(--orange-100);
+	--scrollbar-thumb-color: var(--orange-400);
+	--scrollbar-track-color: var(--orange-200);
+	
+	/* ----------------
+	   CODE BLOCKS & DIFF
+	   ---------------- */
+	--code-block-bg: var(--orange-900);
+	--code-block-text: var(--orange-400);
+	--diff-added: var(--green-100);
+	--diff-removed: var(--red-100);
+
+	/* ----------------
+	   SEMANTIC COLORS
+	   ---------------- */
+	/* Success colors */
+	--success-bg: var(--green-100);
+	--success-bg-light: var(--green-50);
+	--success-text: var(--green-800);
+	--success-border: var(--green-300);
+
+	/* Warning colors */
+	--warning-bg: var(--yellow-100);
+	--warning-bg-light: var(--yellow-50);
+	--warning-text: var(--yellow-900);
+	--warning-border: var(--yellow-300);
+
+	/* Danger colors */
+	--danger-bg: var(--red-100);
+	--danger-bg-light: var(--red-50);
+	--danger-text: var(--red-800);
+	--danger-border: var(--red-300);
+
+	/* Info colors */
+	--info-bg: var(--blue-100);
+	--info-bg-light: var(--blue-50);
+	--info-text: var(--blue-800);
+	--info-border: var(--blue-300);
+
+	/* Secondary colors */
+	--secondary-text: var(--gray-700);
+	--secondary-bg: var(--gray-100);
+
+	/* ----------------
+	   BADGE COLORS
+	   ---------------- */
+	--badge-green-bg: var(--green-600);
+	--badge-orange-bg: var(--orange-600);
+	--badge-red-bg: var(--red-600);
+	--badge-blue-bg: var(--blue-600);
+	--badge-gray-bg: var(--gray-600);
+	--badge-yellow-bg: var(--yellow-600);
+	--badge-teal-bg: var(--teal-600);
+
+	/* ----------------
+	   CARD & CONTAINER COLORS
+	   ---------------- */
+	--card-border: var(--gray-300);
+	--card-header-bg: var(--gray-100);
+	--card-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	--card-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+	/* ----------------
+	   MISC COLORS
+	   ---------------- */
+	--white: #ffffff;
+	--black: #000000;
+	--text-dark: var(--gray-900);
+	--box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+	--box-shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	--box-shadow-primary: 0 4px 12px rgba(0, 123, 255, 0.3);
+	--focus-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+

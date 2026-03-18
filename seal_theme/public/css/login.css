@@ -1,0 +1,97 @@
+/* The original card, just a bit wider and centered */
+.login-content.page-card {
+  background-color: #fff;
+  max-width: 1100px;
+  margin: 6vh auto 4vh;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 30px 80px rgba(0,0,0,.06);
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Two-column layout INSIDE the card */
+.login-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 50%) 1fr;
+  min-height: 500px;
+}
+
+/* LEFT column (visual area) */
+.login-left {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the image until we choose a mode (prevents flash) */
+.login-left .app-logo {
+  opacity: 0;                 /* hidden initially */
+  transition: opacity 0.01s linear;
+  display: block;
+}
+
+/* Reveal once fitted */
+.login-left .app-logo.is-ready {
+  opacity: 1;
+}
+
+/* Mode 1: fill & crop */
+.login-left .app-logo.mode-cover {
+  position: absolute;
+  inset: 0;                   /* top/right/bottom/left = 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mode 2: natural size, centered (no stretch) */
+.login-left .app-logo.mode-natural {
+  position: static;           /* allow flex centering from the parent */
+  width: auto;
+  height: auto;
+  max-width: 100%;            /* never overflow the column */
+  max-height: 100%;
+  object-fit: contain;        /* keeps aspect if browser decides to scale */
+}
+
+/* RIGHT column: title + form */
+.login-right {
+  display: block;
+  padding: 32px 40px 40px;
+}
+
+/* Title above inputs */
+.login-title {
+  margin: 8px 0 16px;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.social-login-buttons {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Medium screens (tablet-ish) */
+@media (max-width: 1200px) {
+  .login-grid {
+    grid-template-columns: minmax(240px, 40%) 1fr; /* give a bit more to left side */
+  }
+}
+
+/* Small screens: stack vertically */
+@media (max-width: 900px) {
+  .login-grid {
+    grid-template-columns: 1fr; /* one column */
+    min-height: unset;          /* allow height to adapt */
+  }
+}
